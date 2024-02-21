@@ -1,0 +1,7 @@
+"use strict";
+
+var sum = function sum(a, b) {
+  return a + b;
+};
+console.log(sum(2, 10));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsIm5hbWVzIjpbInN1bSIsImEiLCJiIiwiY29uc29sZSIsImxvZyJdLCJzb3VyY2VzIjpbIm1haW4uanMiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc3Qgc3VtID0gKGEsIGIpID0+IGEgKyBiO1xuY29uc29sZS5sb2coc3VtKDIsIDEwKSk7Il0sIm1hcHBpbmdzIjoiOztBQUFBLElBQU1BLEdBQUcsR0FBRyxTQUFOQSxHQUFHQSxDQUFJQyxDQUFDLEVBQUVDLENBQUM7RUFBQSxPQUFLRCxDQUFDLEdBQUdDLENBQUM7QUFBQTtBQUMzQkMsT0FBTyxDQUFDQyxHQUFHLENBQUNKLEdBQUcsQ0FBQyxDQUFDLEVBQUUsRUFBRSxDQUFDLENBQUMifQ==
