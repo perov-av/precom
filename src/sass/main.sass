@@ -2,16 +2,30 @@
 @import "block/reset"
 /* Подключаем шрифты */
 @import "block/fonts"
-/* Ниже подключаем отдельные файлы CSS по блокам и по подключаемым библиотекам */
-@import "block/header"
-@import "block/footer"
+
+
+@import "block/slick"
+@import "block/vars"
+@import "block/btn"
+
 
 /* Основные стили */
-footer
-	color: #0704b6
+*
+	font-size: $fz
+	font-family: $fontMain
+	background-color: #fff
+	line-height: 1.2
+	color: #2E4150
 
-h1
-	font-size: 32px
-	font-weight: 900
+body
+	padding-top: 100px
+	position: relative
 
+/* Ниже подключаем отдельные файлы CSS по блокам и по подключаемым библиотекам */
+@import "block/header"
+@import "block/main-banner"
+
+@import "block/footer"
+
+// Адаптив
 @import "block/media"

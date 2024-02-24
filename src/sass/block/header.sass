@@ -1,13 +1,63 @@
 /* Стили шапки сайта */
-@import "vars"
+// @import "vars"
 
-.test-header 
-	color: navajowhite
+header
+	position: relative
+	.header-wrap
+		position: fixed
+		z-index: 5
+		top: 0
+		left: 0
+		width: 100%
+	.header-container
+		position: relative
+		max-width: 1306px
+		padding: 1.25rem 1rem
+		display: flex
+		justify-content: space-between
+		align-items: center
+		color: #4D6D86
+		left: 50%
+		width: 100%
+		transform: translateX(-50%)
+		border-bottom: .5px solid $accentPrimary
+
+.menu__list
 	display: flex
+	justify-content: space-between
+	align-items: center
+	gap: 2.3rem
+	align-items: center
 
-@media (max-width: 700px) 
-	p 
-		display: none
+.menu__list-item
+	position: relative
+.menu__list-item::after
+	content: ""
+	display: block
+	background-color: $accentPrimary
+	height: 2px
+	width: 0%
+	left: 50%
+	position: absolute
+	transition: width $transition
+	transform: translateX(-50%)
+.menu__list-item:hover::after
+	width: 100%
+.menu__list-item.active
+	border-bottom: 2px solid $accentPrimary
 
-span 
-	font-size: 10px
+.header__soc
+	display: flex
+	justify-content: space-between
+	align-items: center
+	gap: 1.2rem
+	align-items: center
+
+a.header__soc-link
+	width: 24px
+	height: 24px
+	display: flex
+	align-items: center
+	transition: all $transition
+	&:hover svg path
+		fill: $accentPrimary
