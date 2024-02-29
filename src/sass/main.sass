@@ -13,17 +13,33 @@
 *
 	font-size: $fz
 	font-family: $fontMain
-	background-color: #fff
 	line-height: 1.2
 	color: #2E4150
 
+
+//Кастомизация скроллбара
+::-webkit-scrollbar
+	width: 7px
+::-webkit-scrollbar-thumb
+	background-color: $accentPrimary
+	border-radius: 14px
+
+// Отступ для фиксированного меню
 body
 	padding-top: 100px
 	position: relative
-
+	background-color: #fff
+.hidden-for-SEO
+	width: 1px
+	height: 1px
+	background: transparent
+	color: transparent
 /* Ниже подключаем отдельные файлы CSS по блокам и по подключаемым библиотекам */
 @import "block/header"
 @import "block/main-banner"
+@import "block/popular-goods"
+@import "block/form-block"
+@import "block/about"
 
 @import "block/footer"
 

@@ -1,0 +1,91 @@
+.popular-goods
+	background-color: $bgBlue
+	padding-top: 3rem
+
+.container
+	max-width: 1306px
+	padding-right: 1rem
+	padding-left: 1rem
+	margin: 0 auto
+
+.popular-goods__title
+	font-family: $fontTitle
+	font-size: 1.6rem
+	font-weight: 700
+	line-height: 1.3
+	text-align: center
+	margin-bottom: 1rem
+
+.popular-goods__desc
+	max-width: 90%
+	text-align: center
+	font-size: 1.4rem
+	line-height: 1.3
+	margin: 0 auto 2.1rem
+
+.popular-goods__wrap
+	width: 107%
+	overflow-x: auto
+	max-height: min-content
+	white-space: nowrap
+	scroll-snap-type: x mandatory
+	position: relative
+	.popular-goods__item
+		display: inline-block
+		height: 100%
+		max-width: 466px
+		margin-bottom: 2rem
+		margin-right: 1rem
+		scroll-snap-align: start
+		background-color: #fff
+		position: relative
+		z-index: 0
+		.popular-goods__content
+			padding: 0.5rem
+			padding-right: 1.1rem
+			display: grid
+			align-items: center
+			align-content: space-between
+			grid-template-columns: 50% 50%
+			z-index: 2
+			position: relative
+
+.popular-goods__item-right
+	height: 100%
+	display: grid
+	grid-template-rows: 50% 30% 20%
+	grid-template-columns: 100%
+	align-content: center
+	align-items: center
+	white-space: wrap
+	padding-top: 2rem
+	padding-bottom: 2rem
+	text-align: center
+.popular-goods__item-title
+	font-family: $fontTitle
+	font-size: 1.2rem
+	font-weight: 700
+	text-align: center
+	max-width: 100%
+	margin-bottom: 1rem
+	word-wrap: break-word
+
+.popular-goods__item-factory, .popular-goods__item-linkmore
+	font-size: 0.8rem
+	font-family: $fontCard
+
+.popular-goods__item-linkmore
+	text-decoration: underline
+
+.popular-goods__item-factory
+	margin-bottom: 1.4rem
+
+.popular-goods__item::after
+	content: ""
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	box-shadow: 0 1px 4px 0 rgba(25, 33, 61, 0.08)
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.59) 14.5%, rgba(235, 249, 251, 0.62) 25.67%, #00b7cf 92.5%)
