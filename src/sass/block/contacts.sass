@@ -1,0 +1,77 @@
+.contacts__title
+	padding-top: 2rem
+	padding-bottom: 2rem
+	
+.contacts__title-main
+	font-size: 2.4rem
+	font-weight: 700
+	font-family: $fontTitle
+	margin-bottom: 1rem
+
+.contacts__title-desc
+	font-size: 1.2rem
+
+.contacts__form
+	background-color: $lightBlu
+	padding-top: 2.2rem
+	padding-bottom: 4rem
+
+.contacts__form-wrap
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-direction: row
+	height: 100%
+	flex-wrap: wrap
+
+.contacts__form-main
+	height: 100%
+	min-width: 50%
+	padding: 1.5rem
+	margin: 0
+	background-color: #fff
+	flex-grow: 1
+	margin-bottom: 2rem
+
+#form-btn-contacts
+	width: 172px
+
+#contacts__form-items
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	justify-content: space-between
+	align-content: space-between
+	height: 100%
+	gap: 2.2rem
+
+.contacts__form-item
+	a, address
+		font-family: $fontCard
+		font-size: 16px
+	padding: 1.5rem
+	border-radius: 6px
+	padding-left: 4.2rem
+	width: 100%
+	background-color: #fff
+	display: flex
+	flex-direction: column
+	position: relative
+	gap: 0.5rem
+	&::before
+		content: ""
+		width: 50px
+		height: 50px
+		position: absolute
+		top: 50%
+		left: 1rem
+		transform: translateY(-50%)
+		background-repeat: no-repeat
+		background-size: cover
+
+.contacts__form-mail::before
+	background-image: url(../img/email.jpg)
+.contacts__form-phone::before
+	background-image: url(../img/phone.jpg)
+.contacts__form-address::before
+	background-image: url(../img/address.jpg)
