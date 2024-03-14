@@ -1,0 +1,101 @@
+.equipment__wrap
+	display: grid
+	grid-template-columns: 26% 74%
+
+.equipment__catalog
+	background-color: $bgBlue
+	min-height: 100vh
+	padding: 0.6rem
+
+.equipment__catalog-wrap
+	display: flex
+	flex-direction: column
+	gap: 1rem
+
+.equipment__catalog-title
+	font-family: $fontTitle
+	font-weight: 700
+	font-size: 1.2rem
+	text-align: center
+	color: #8999a5
+	margin-bottom: 1.5rem
+
+.equipment__tab
+	position: relative
+	background-color: $bgBlue
+	border: 1px solid #8999a5
+	padding: 0.5rem
+	padding-bottom: 1rem
+	border-radius: 14px
+	box-shadow: 0 8px 10px rgba($primary, 0.08)
+	overflow: hidden
+	.equipment__category
+		max-height: 0
+		transition: all .03s ease
+		overflow: hidden 
+		color: #8999a5
+		display: flex
+		flex-direction: column
+		gap: .3rem
+		a.equipment__category-link
+			font-size: .9rem
+			// width: 100%
+			position: relative
+			&:last-child
+				padding-bottom: 0.3rem
+.equipment__category-link::after
+	content: ""
+	display: block
+	background-color: $accentPrimary
+	height: 2px
+	width: 0%
+	left: 50%
+	position: absolute
+	transition: width $transition
+	transform: translateX(-50%)
+.equipment__category-link:hover::after
+	width: 100%
+				
+	
+h3.equipment__factory
+	width: 100%
+	margin: 0 auto
+	text-align: center
+	font-family: $fontTitle
+	font-weight: 700
+	font-size: 1.1rem
+	color: #8999a5
+	cursor: pointer
+	
+.equipment__tab.active
+	background-color: #fff
+	h3.equipment__factory
+		color: $primary
+		margin-bottom: .6rem
+	.equipment__category
+		max-height: 100%
+
+.equipment__body
+	padding-left: 2.2rem
+
+.equipment__body-wrap
+	display: grid
+	max-width: 100%
+	grid-template-columns: 35% 60%
+	gap: 3rem
+	padding-top: 2rem
+	margin-bottom: 3rem
+
+.equipment__btn-wrap
+	display: flex
+	align-items: center
+	justify-content: space-evenly
+	gap: 1.4rem
+	.equipment__btn a
+		padding: 3rem 2rem
+		border: 2px solid $primary
+		border-radius: 0.6rem
+		transition: all $transition
+		&:hover
+			background-color: $primary
+			color: #fff

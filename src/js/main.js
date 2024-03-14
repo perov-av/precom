@@ -1,3 +1,4 @@
+
 function toggleItem(elem) {
   for (var i = 0; i < elem.length; i++) {
     elem[i].addEventListener("click", function(e) {
@@ -11,11 +12,17 @@ function toggleItem(elem) {
           current.classList.add('active')
         }
       }
-      e.preventDefault();
+      // e.preventDefault();
     });
   };
 }
+
+// Табы в каталоге
+toggleItem(document.querySelectorAll('.equipment__tab'));
+
+// Пункты меню
 toggleItem(document.querySelectorAll('.menu__list-item'));
+
 
 
 $(document).ready(function(){
