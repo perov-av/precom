@@ -41,7 +41,7 @@
     @@include("templates/header.html")
     <main>
       <h1 class="hidden-for-SEO">
-        Купить оборудование для прачечной SimpleClean
+        Полное наименование конкретной машины
       </h1>
       <section class="equipment">
         <div class="container">
@@ -84,84 +84,68 @@
                 </div>
               </div>
             </aside>
-            <div class="equipment__body">
-							<h2 class="category-title">
-								SimpleClean
-							</h2>
-							<p class="category__desc">
-								Тут может быть пара предложений о серии. Какие-то основные моменты, преимущества и тд.
-							</p>
-							<div class="category__filter">
-								<button class="category__filter-item">12 кг</button>
-								<button class="category__filter-item">15 кг</button>
-								<button class="category__filter-item">22 кг</button>
-								<button class="category__filter-item">27 кг</button>
+            <div class="equipment__body single-page">
+							<div class="single-page__left mfp-image">
+								<div class="sigle-gallery ">
+									<a href="img/gallery1.jpg" title="Стиральная машина WSH"><img src="img/gallery1.jpg"></a>
+									<a href="img/gallery2.jpg" title="rrrr"><img src="img/gallery2.jpg"></a>
+									<a href="img/gallery3.jpg" title="Precom"><img src="img/gallery3.jpg"></a>
+									<a href="img/gallery4.jpg" title="Oh no, not again!"><img src="img/gallery4.jpg"></a>
+									<a href="img/gallery5.jpg" title="Swan Lake"><img src="img/gallery5.jpg"></a>
+								</div>
 							</div>
-							<div class="category__wrap">
-								<!-- <div class="category__item-wrap"> -->
-									<a href="single-page.html" id="block">
-										<div class="category__item">
-											<div class="category__item-img">
-												<img src="img/item-img.png" alt="Стирально-отжимная машина с жестким креплением 12KG Hard Mount Fast Spin Washer">
-											</div>
-											<div class="category__item-right">
-												<h3 class="category__item-title">
-													Стирально-отжимная машина с жестким креплением
-												</h3>
-												<div class="category__item-capacity">
-													12 кг
-												</div>
-												<div class="category__item-more">Подробнее</div>
-											</div>
-										</div>
-									</a>
-								<!-- </div> -->
-								<!-- <div class="category__item-wrap"> -->
-									<a href="#" id="block">
-										<div class="category__item">
-											<div class="category__item-img">
-												<img src="img/item-img.png" alt="Стирально-отжимная машина с жестким креплением 12KG Hard Mount Fast Spin Washer">
-											</div>
-											<div class="category__item-right">
-												<h3 class="category__item-title">
-													Стирально-отжимная машина с жестким креплением
-												</h3>
-												<div class="category__item-capacity">
-													12 кг
-												</div>
-												<div class="category__item-more">Подробнее</div>
-											</div>
-										</div>
-									</a>
-								<!-- </div> -->
-								<!-- <div class="category__item-wrap"> -->
-									<a href="#" id="block">
-										<div class="category__item">
-											<div class="category__item-img">
-												<img src="img/item-img.png" alt="Стирально-отжимная машина с жестким креплением 12KG Hard Mount Fast Spin Washer">
-											</div>
-											<div class="category__item-right">
-												<h3 class="category__item-title">
-													Стирально-отжимная машина с жестким креплением
-												</h3>
-												<div class="category__item-capacity">
-													12 кг
-												</div>
-												<div class="category__item-more">Подробнее</div>
-											</div>
-										</div>
-									</a>
-								<!-- </div> -->
-								
+							<div class="single-page__right">
+								<h3 class="single-title">
+									12KG Hard Mount Fast Spin Washer
+								</h3>
+								<ul class="single-desc">
+									<li class="single-desc-item">
+										Полуавтоматическая прачечная повышает скорость работы и эффективность сотрудников на фабрике по производству белья.
+									</li>
+									<li class="single-desc-item">
+										Поддерживайте чистоту текстиля на круизном лайнере, чтобы ваши клиенты наслаждались чистой и опрятной обстановкой в доме.
+									</li>
+									<li class="single-desc-item">
+										Все стиральные машины, оснащенные ультрафиолетовым излучением, помогают уничтожать бактерии, особенно в гостиницах, отелях типа "постель и завтрак", хостелах, курортах, гостевых домах, капсульных отелях.
+									</li>
+								</ul>
+								<p class="single-attention">
+									*Стоимость товара варьируется взависимости от курса, для того, чтобы ознакомиться с актуальным прайсом продукции, свяжитесь с нами любым удобным способом
+								</p>
+								<a href="#popupForm" class="btn-primary popupForm">Напишите нам</a>
 							</div>
 						</div>
           </div>
-        </div>
-      </section>
+						<form action="" class="contacts__form-main form-main mfp-hide" id="popupForm">
+							<h3 class="popupForm-title">
+								Заполните форму и мы свяжемся с вами
+							</h3>
+							<div class="form-main__name">
+								<label for="name-contacts">Имя</label>
+								<input id="name-contacts" type="text" name="name" autocomplete required placeholder="Иванов Иван"/>
+							</div>
+							<div class="form-main__up-side">
+								<div class="form-main__email">
+									<label for="email-contacts">E-mail</label>
+									<input id="email-contacts" type="email" name="email" autocomplete required placeholder="your-email@email.ru"/>
+								</div>
+								<div class="form-main__phone">
+									<label for="phone-contacts">Номер телефона</label>
+										<input id="phone-contacts" type="telephone" name="phone" autocomplete required placeholder="+7 (999) 999-99-99"/>
+								</div>
+							</div>
+							<div class="form-main__down-side">
+								<label for="msg-contacts">Сообщение</label>
+								<textarea id="msg-contacts" type="text" name="msg" rows="5" cols="33" placeholder="Напишите здесь ваше сообщение..."></textarea>
+							</div>
+							<input id="form-btn-contacts" class="btn-primary form-btn" type="submit" value="Отправить">
+						</form>
+					</div>
+				</section>
 
-      @@include("templates/form-block.html")
+			@@include("templates/form-block.html")
     </main>
-    @@include("templates/footer.html")
+		@@include("templates/footer.html")
 
     <script src="js/app.min.js"></script>
   </body>
