@@ -73,6 +73,10 @@ $(document).ready(function(){
 		// mainClass: 'custom-popup-class'
 	});
 
+// Подключение фильтра MixItUp
+let containerEl = document.querySelector('.category__wrap');
+let mixer = mixitup(containerEl);
+
 
 
 });

@@ -66,3 +66,129 @@
 	font-family: $fontTitle
 	text-align: center
 	margin-bottom: 1.5rem
+
+// Tabs
+.specifications
+	width: 100%
+	grid-column: 1 / 3
+	min-height: 420px
+	padding-top: 50px
+
+.specifications__container 
+	text-align: center
+.specifications__tabs
+	position: relative 
+	margin: 0 auto
+	input
+		appearance: none
+		display: none
+	
+.specifications__icon 
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	gap: 0.2rem
+	label
+		text-align: center
+		width: 12rem
+		height: 3rem
+		color: darken($primary, 20%) 
+		opacity: .35
+		transition: .3s
+		cursor: pointer
+		background-color: $accentPrimary
+		display: flex
+		justify-content: center
+		align-items: center
+		z-index: 2
+		border-top-left-radius: 30px
+		border-top-right-radius: 30px
+		border: solid 1px $primary
+		border-bottom: none
+
+.specifications__tabs input:nth-child(1):checked ~ .specifications__icon label:nth-child(1), .specifications__tabs input:nth-child(2):checked ~ .specifications__icon label:nth-child(2)
+	opacity: 1
+	// color: $primary
+	background-color: #40DBF8
+	border: none
+	font-weight: 600
+
+.specifications__indicator 
+	position: absolute
+	width: 12rem
+	height: 3rem
+	background-color: $secondary
+	z-index: 1
+	border-top-left-radius: 30px
+	border-top-right-radius: 30px
+	transition: .3s
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: -20px
+		width: 20px
+		height: 20px
+		border-bottom-right-radius: 20px
+		box-shadow: 8px 8px 0 8px #40DBF8
+		background-color: transparent
+	&::after	
+		content: ''
+		position: absolute
+		bottom: 0
+		right: -20px
+		width: 20px
+		height: 20px
+		border-bottom-left-radius: 20px
+		box-shadow: -8px 8px 0 8px #40DBF8
+		background-color: transparent
+		display: block
+
+
+.specifications__tabs input:nth-child(1):checked ~ .specifications__icon .specifications__indicator
+	left: 206px
+	border: none
+.specifications__tabs input:nth-child(2):checked ~ .specifications__icon .specifications__indicator
+	left: 450px
+	border: none
+
+.specifications__content 
+	position: absolute
+	left: 0
+	top: 60px
+	width: 100%
+	min-height: 300px //comment later
+	background: linear-gradient(0.00deg, rgba(255, 255, 255, 0.59) 14.5%,rgba(235, 249, 251, 0.62) 25.667%, #40DBF8 92.5%)
+	border-radius: 8px
+
+.specifications__content .contentBx
+	position: absolute
+	inset: 0
+	padding: 30px
+	visibility: hidden
+	opacity: 0
+	transition: .3s
+	text-align: left
+	font-size: 0.8rem
+	.parametr
+		display: flex
+		align-items: end
+		justify-content: space-between
+		margin-bottom: 10px
+		.contentBx-dash
+			border-bottom: dashed 1px rgb(46, 65, 80)
+			flex-grow: 1
+			align-self: end
+			margin-right: 10px
+			margin-left: 10px
+		.contentBx-title, .contentBx-parametr
+			font-size: 0.8rem
+
+.specifications__tabs input:nth-child(1):checked ~ .specifications__icon .specifications__content .contentBx:nth-child(1) 
+	opacity: 1
+	visibility: visible
+.specifications__tabs input:nth-child(2):checked ~ .specifications__icon .specifications__content .contentBx:nth-child(2)
+	opacity: 1
+	visibility: visible
+
