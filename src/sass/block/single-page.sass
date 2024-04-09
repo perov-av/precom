@@ -6,7 +6,8 @@
 
 .single-page__left, .single-page__right
 	padding-top: 2rem
-
+.single-page__right
+	padding-right: 10px
 .sigle-gallery
 	position: relative
 	display: grid
@@ -86,13 +87,13 @@
 .specifications__icon 
 	position: relative
 	display: flex
-	justify-content: center
+	justify-content: start
 	align-items: center
-	gap: 0.2rem
+	gap: 5px
+	padding-left: 20px
 	label
-		text-align: center
-		width: 12rem
-		height: 3rem
+		width: 120px
+		height: 50px
 		color: darken($primary, 20%) 
 		opacity: .35
 		transition: .3s
@@ -106,6 +107,9 @@
 		border-top-right-radius: 30px
 		border: solid 1px $primary
 		border-bottom: none
+		img
+			width: 40px
+			height: auto
 
 .specifications__tabs input:nth-child(1):checked ~ .specifications__icon label:nth-child(1), .specifications__tabs input:nth-child(2):checked ~ .specifications__icon label:nth-child(2)
 	opacity: 1
@@ -116,8 +120,8 @@
 
 .specifications__indicator 
 	position: absolute
-	width: 12rem
-	height: 3rem
+	width: 120px
+	height: 50px
 	background-color: $secondary
 	z-index: 1
 	border-top-left-radius: 30px
@@ -131,7 +135,7 @@
 		width: 20px
 		height: 20px
 		border-bottom-right-radius: 20px
-		box-shadow: 8px 8px 0 8px #40DBF8
+		box-shadow: 9px 9px 0 8px #40DBF8
 		background-color: transparent
 	&::after	
 		content: ''
@@ -141,26 +145,32 @@
 		width: 20px
 		height: 20px
 		border-bottom-left-radius: 20px
-		box-shadow: -8px 8px 0 8px #40DBF8
+		box-shadow: -9px 9px 0 8px #40DBF8
 		background-color: transparent
 		display: block
 
 
 .specifications__tabs input:nth-child(1):checked ~ .specifications__icon .specifications__indicator
-	left: 206px
+	left: 20px
 	border: none
 .specifications__tabs input:nth-child(2):checked ~ .specifications__icon .specifications__indicator
-	left: 450px
+	left: 146px
 	border: none
 
 .specifications__content 
 	position: absolute
 	left: 0
-	top: 60px
+	top: 49px
 	width: 100%
 	min-height: 300px //comment later
 	background: linear-gradient(0.00deg, rgba(255, 255, 255, 0.59) 14.5%,rgba(235, 249, 251, 0.62) 25.667%, #40DBF8 92.5%)
 	border-radius: 8px
+	h2
+		font-size: 1.3rem
+		color: #fff
+		font-weight: 700
+		font-family: $fontTitle
+		margin-bottom: 1.5rem
 
 .specifications__content .contentBx
 	position: absolute

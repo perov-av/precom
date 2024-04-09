@@ -1,9 +1,256 @@
+@media screen and ( max-width: 1360px )
+	*
+		font-size: 18px
+
+
 @media screen and ( max-width: 1200px )
 	
+	// header
+	.menu__list
+		gap: 1rem
+		.menu__list-link 
+			font-size: 0.9rem
+	a.header__tel
+		font-size: 0.9rem
+	header .header-container
+		max-width: 1100px
+		gap: 1rem
+		flex-wrap: wrap
+	a.header__soc-link
+		width: 20px
+		height: 20px
+	.header__soc
+		gap: .8rem	
+	.equipment__btn-wrap .equipment__btn a
+		text-align: center
+		padding: 2rem 1.5rem
+	
+
 @media screen and ( max-width: 990px )
+	*
+		font-size: 15px
+	// header
+	.header__icon
+		display: block
+	#header__tel-mobile
+		display: block
+	.menu-wrapper
+		display: none
+	header .header-container
+		display: flex
+		justify-content: space-between
+		align-items: center
+	header .header-wrap
+		padding-right: 50px
+		padding-left: 30px
+	#header__tel-mobile
+		font-size: 18px
+	// Баннер
+	.banner__title
+		width: 150%
+	.banner__title_1
+		width: 150%
+	.banner__title_2
+		width: 140%
+	.banner__title_3
+		width: 150%
+	.category__item-title
+		font-size: 0.8rem
+	.partnership-wrap::after
+		left: 47%
+	.partnership__item-direct
+		gap: 1rem
+		padding: 1rem 1.5rem
+	.contacts__form-wrap
+		flex-direction: column
+	#contacts__form-items
+		order: -1
+		width: 80%
+		margin-bottom: 2rem
+	.contacts__form-item
+		padding:3rem 3rem 3rem 7.2rem
+	.contacts__form-item::before
+		left: 2rem
+	.contacts__form-main
+		min-width: 80%
+	.benefits-wrap
+		grid-template-columns: 1fr
+	.benefits__left-item
+		padding: 1rem
+		width: 100%
+		gap: 0.8rem
+	.benefits__item-figure
+		font-size: 2.5rem
+	.benefits__item-title
+		font-size: 1.8rem
+		margin-bottom: 1rem
+	.benefits__item-descr
+		font-size: 1.2rem
+	.benefits__left
+		margin-bottom: 2rem
+	.benefits__right
+		padding: 2rem
+		text-align: center
 	
+
 @media screen and ( max-width: 767px )
-	
+	*
+		font-size: 13px
+	header .header-wrap
+		padding-right: 35px
+		padding-left: 20px
+	#header__tel-mobile
+		font-size: 18px
+	.banner__title
+		font-size: 2rem	
+	.banner__text
+		font-size: 1.2rem
+	.equipment__body-wrap
+		grid-template-columns: 1fr
+	.equipment__wrap
+		grid-template-columns: 35% 65%
+	.equipment__body-img
+		width: 60%
+		margin: 0 auto
+	.equipment__btn-wrap
+		flex-direction: column
+	.category__wrap
+		grid-template-columns: 1fr
+	.category__item-title
+		font-size: 1.2rem
+	.single-page
+		grid-template-columns: 1fr
+	.specifications
+		grid-column: 1
+	.partnership__item
+		display: block
+		background-color: $bgBlue
+		padding: 2rem 3rem
+	.partnership-wrap::after
+		display: none
+	.partnership__item-direct::before, .partnership__item-direct::after
+		display: none
+	.partnership__direct-img img
+		width: 100px
+	.partnership__direct-name
+		font-size: 2.2rem
+	.partnership__item-direct
+		margin-bottom: 2rem
+	.partnership__item-desc-p
+		font-size: 1.5rem
+	.partnership__item-desc-list
+		li
+			font-size: 1.3rem
+
+
 @media screen and ( max-width: 650px )
+	.banner::after
+		background: linear-gradient(90.00deg, rgb(255, 255, 255) 40%,rgba(255, 255, 255, 0.5) 72.284%)
+	.banner__title_1
+		width: 200%
+	.banner__title_2
+		width: 200%
+	.banner__title_3	
+		width: 200%
+	.banner__text
+		width: 160%
+	.banner__title
+		font-size: 1.6rem
+	.banner__text
+		font-size: 1.1rem
+	.slick-dots
+		gap: 15px
+		right: 50%
+		transform: translateX(50%)
+	.slick-dots li button
+		width: 15px
+		height: 15px
+	a.btn-primary, a.btn-white
+		padding: 10px 15px
+		min-width: 10rem
+	.popular-goods__desc
+		font-size: 1.2rem
+	.footer-container
+		display: grid
+		grid-template-columns: 20% 1fr
+		gap: 2rem
+	.footer__socwrap
+		justify-self: center
+		justify-content: center
+		grid-column-start: span 2
+	.footer__soc
+		justify-content: space-around
+	.footer__copyright
+		flex-direction: column
+		align-items: center
+		gap: .7rem
+		a
+			border-right: none
+		.copyright
+			border-right: none
+	.equipment__wrap
+		overflow: hidden
+		position: relative 
+		grid-template-columns: 1fr
+		margin-bottom: 2rem
+		.equipment__catalog
+			position: fixed
+			top: 96px
+			left: 0
+			transform: translateX(-213px)
+
+		.equipment__catalog.active
+			// position: absolute
+			// top: 0
+			// left: 0
+			transform: translateX(0)
+			z-index: 5
+	.equipment__catalog
+		.equipment__catalog-after
+			display: block
+			top: 31px
+	.partnership__direct-name
+		font-size: 2rem
+	.form-main .form-main__up-side
+		grid-template-columns: 1fr
+	.form-main__email
+		margin-bottom: 1rem
+	.benefits__left-item
+		min-width: 100%
+	.benefits__left
+		grid-template-columns: 1fr
+	
 
 @media screen and ( max-width: 480px )
+	#header__tel-mobile
+		font-size: 14px
+	.banner__content
+		padding-left: 3rem
+	.form-main .form-main__up-side
+		grid-template-columns: 1fr
+		gap: 0
+	.footer__copyright
+		font-size: 8px
+	.footer-container
+		grid-template-columns: 1fr
+		a
+			text-align: center
+	.footer__socwrap
+		grid-column-start: span 1
+	#header__tel-mobile
+		display: none
+	.banner__btn
+		flex-direction: column
+	.banner__text
+		margin-bottom: 1rem
+	.banner__title_3
+		margin-bottom: 1.7rem
+		font-size: 1.4rem
+	.category__filter-item
+		font-size: 1.1rem
+	.category__item-title
+		font-size: 1rem
+	.partnership__direct-name
+		font-size: 1.5rem
+	.contacts__form-item
+		padding-right: 1rem

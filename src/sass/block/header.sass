@@ -10,13 +10,20 @@ header
 		left: 0
 		width: 100%
 		background-color: #fff
+		padding-right: 65px
+		padding-left: 65px
+		padding-top: 17px
+		// max-width: 1306px
+		margin: 0 auto
 	.header-container
+		// margin: 0 auto
 		position: relative
 		max-width: 1306px
 		padding: 1.25rem 1rem
-		display: flex
-		justify-content: space-between
-		align-items: center
+		display: grid
+		grid-template-columns: 20% 80%
+		align-content: center
+		justify-items: center
 		color: #4D6D86
 		left: 50%
 		width: 100%
@@ -27,8 +34,14 @@ header
 	display: flex
 	justify-content: space-between
 	align-items: center
-	gap: 2.3rem
+	gap: 1.3rem
 	align-items: center
+.menu-wrapper
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	gap: 1rem
 
 .menu__list-item
 	position: relative
@@ -62,3 +75,48 @@ a.header__soc-link
 	transition: all $transition
 	&:hover svg path
 		fill: $accentPrimary
+
+// Mobile
+.header__icon
+	background-image: url(../img/header__icon.png)
+	width: 40px
+	height: 40px
+	display: none
+
+#header__tel-mobile
+	display: none
+
+.header-container.active
+	.menu-wrapper
+		background-color: $bgBlue
+		display: flex
+		position: absolute
+		top: 80px
+		right: 50%
+		transform: translateX(50%)
+		max-width: 380px
+		flex-direction: column
+		padding: 3rem
+		gap: 3.5rem
+		border-bottom-left-radius: 10px
+		border-bottom-right-radius: 10px
+		border: 1px solid $primary
+		border-top: none
+		.menu__list
+			flex-direction: column
+			gap: 2rem
+			font-size: 1.2rem
+			text-transform: uppercase
+		.header__tel
+			font-size: 1.6rem
+			font-weight: 700
+		.header__soc
+			width: 30px
+			height: 30px
+			gap: 2.8rem
+			justify-content: center
+			.header__soc-item
+				svg path
+					width: 30px
+					height: 30px
+			// flex-direction: column
