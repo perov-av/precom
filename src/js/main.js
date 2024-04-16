@@ -52,7 +52,15 @@ $(document).ready(function () {
 	$('.logo').click(function () {
 		$('.menu__list-item').removeClass('active')
 	});
-
+	// Удаляем класс active у меню при клике на сайдбар
+	$('.equipment__catalog-after').click(function () {
+		$('.header-container').removeClass('active')
+		$('.toggle').removeClass('active')
+	});
+	$('.toggle').click(function () {
+		$('.equipment__catalog-after').removeClass('active')
+		$('.equipment__catalog').removeClass('active')
+	});
 	// Подключаем слайдер slick для баннера
 	$('.banner-slider').slick({
 		dots: true,
